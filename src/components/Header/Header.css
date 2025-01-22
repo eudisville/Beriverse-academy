@@ -1,0 +1,20 @@
+.header {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 58vh;
+    width: 98%;
+    background-color: royalblue;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,41 @@
+.course-card {
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    padding: 20px;
+    height: 350px;
+    width: 300px;
+}
+
+.image-container {
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: black;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.infos h1{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.infos p {
+    margin-bottom: 20px;
+}
+
+.infos button {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.infos button:hover {
+    background-color: black;
+    transition: .3s;
+}

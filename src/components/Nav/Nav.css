@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+/* Conteneur principal */
+.navbar {
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: white;
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+/* Icône du menu hamburger */
+.menu-icon {
+  width: 30px;
+  height: 18px;
+  display: none; /* Masqué par défaut */
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1001; /* S'assurer qu'il est au-dessus du menu */
+  transition: transform 0.3s ease;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
+
+/* Effet de croix */
+.menu-icon.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.menu-icon.open .bar:nth-child(2) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+/* Liens de navigation */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-right: 4 0px;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.nav-links ul li a:hover {
+  color: #0069ac;
+  transition: .4s;
+}
+
+/* Responsive - Hamburger Menu */
+@media (max-width: 768px) {
+  .logo img {
+    width: 160px;
+  }
+
+  .menu-icon {
+    display: flex; /* Afficher le menu hamburger */
+  }
+
+  .nav-links {
+    display: none; /* Masquer les liens par défaut */
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: white; /* Fond noir */
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+  }
+
+  .nav-links.active {
+    display: flex; /* Afficher les liens lorsque le menu est actif */
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .nav-links ul li {
+    text-align: left;
+    font-size: 27px;
+  }
+
+  .nav-links ul li a {
+    font-size: 27px;
+  }
+}
