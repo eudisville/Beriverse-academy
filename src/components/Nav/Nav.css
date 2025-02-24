@@ -101,8 +101,8 @@
 /* Responsive - Hamburger Menu */
 @media (max-width: 768px) {
   .logo img {
-    width: 90px;
-    margin: -20px;
+    width: 70px;
+    margin: -10px;
   }
 
   .menu-icon {
