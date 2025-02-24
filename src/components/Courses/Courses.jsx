@@ -8,6 +8,7 @@ function Courses({ image, title, description }) {
             <img src={image} alt="" />
         </div>
         <div className="infos">
+            <h5></h5>
             <h1>{title}</h1>
             <p>{description}</p>
             <button>En savoir plus</button>

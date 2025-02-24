@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from "../Nav/assets/Logo.png";
 import './Nav.css';
 
 function Nav() {
@@ -13,7 +12,7 @@ function Nav() {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src={Logo} alt="Logo" />
+        <Link to="/"><img src="BA.jpg" alt="" /></Link>
       </div>
       {/* Icône du menu hamburger */}
       <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -23,18 +22,11 @@ function Nav() {
       {/* Liens de navigation */}
       <div className={`nav-links ${isOpen ? 'active' : ''}`}>
         <ul>
-          <li>
-            <Link to="">Accueil</Link>
-          </li>
-          <li>
-            <Link to="">Nos formations</Link>
-          </li>
-          <li>
-            <Link to="">Feedback</Link>
-          </li>
-          <li>
-            <Link to="">Contactez-nous</Link>
-          </li>
+          <li><Link to="/">Nos Formations</Link></li>
+          <li><Link to="/">Bootcamp</Link></li>
+          <li><Link to="/">A venir</Link></li>
+          <li><Link to="/">BA Community</Link></li>
+          <li><Link to="/">Marketplace</Link></li>
         </ul>
       </div>
     </div>

@@ -1,20 +1,45 @@
-.header {
-    height: 60vh;
-    width: 100%;
+header {
+    height: 88vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/learn.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    padding: 40px;
 }
 
-.container {
-    height: 58vh;
-    width: 98%;
-    background-color: royalblue;
-    border-radius: 20px;
+.header {
+    width: 50%;
+}
+
+.header h1{
+    font-size: 72px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.header button {
+    background-color: rgb(0, 235, 160);
+    color: rgb(0, 54, 82);
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: black;
+    color: white;
+    transition: .3s;
 }
 
 @media screen and (max-width: 767px) {
-    .header {
-        padding: 20px;
-    }
+
 }
