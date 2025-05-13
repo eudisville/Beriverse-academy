@@ -26,6 +26,38 @@
     width: 60%;
 }
 
+.about-us {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    width: 50%;
+    padding: 30px;
+}
+
+.left h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 24px;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right img {
+    width: 70%;
+}
+
 span {
     color: rgb(0, 235, 160);
 }
@@ -35,8 +67,8 @@ span {
 }
 
 .courses-section {
-    background-color: rgb(252, 252, 252);
-    padding: 20px 40px;
+    background-color: rgb(255, 255, 255);
+    padding: 100px 20px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -76,7 +108,15 @@ span {
     flex-wrap: wrap;
     margin-top: 30px;
     margin-bottom: 40px;
-    gap: 30px;
+    gap: 20px;
+}
+
+.courses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .bootcamp {
@@ -105,8 +145,8 @@ span {
 
 .upcoming {
     height: 100vh;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 60px 40px;
     display: flex;
@@ -122,25 +162,64 @@ span {
 .upcoming-text p {
     font-size: 24px;
     padding: 20px 120px;
+    color: gray;
 }
 
 .upcoming-cards {
+    height: 60vh;
+    width: 100%;
+    margin: 20px 0;
+    background-color: rgb(134, 208, 255);
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    gap: 20px;
+    padding: 0 70px;
+}
+
+.upcoming-left {
+    text-align: center;
+    width: 50%;
+}
+
+.upcoming-left h5 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.upcoming-left h2 {
+    font-size: 54px;
+    margin-bottom: 10px;
+}
+
+.upcoming-left button {
+    background-color: black;
+    color: rgb(134, 208, 255);
+    border: 1px solid black;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.upcoming-left button:hover {
+    background-color: rgb(134, 208, 255);
+    color: black;
+    border: 1px solid gray;
+    transition: .3s;
 }
 
 .community {
-    height: 100vh;
-    width: 100%;
+    height: 70vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/alumni.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     padding: 40px;
+    margin: 30px 40px;
+    border-radius: 30px;
 }
 
 .community-text {
@@ -175,12 +254,30 @@ span {
 }
 
 @media screen and (max-width: 767px) {
-    .about h1 {
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left {
+        width: 100%;
+        text-align: center  ;
+    }
+
+    .left h1 {
         font-size: 36px;
     }
 
-    .about p {
+    .left p {
         font-size: 18px;
+        color: gray;
+    }
+
+    .right img {
+        width: 400px;
     }
 
     .courses-links {
@@ -195,6 +292,10 @@ span {
         text-align: center;
     }
 
+    .courses {
+        gap: 70px;
+    }
+
     .text h1 {
         font-size: 48px;
         line-height: 54px;
@@ -205,18 +306,6 @@ span {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .bootcamp {
-        height: 100vh;
-    }
-
-    .bootcamp-items {
-        width: 100%;
-    }
-
-    .bootcamp-items p {
-        font-size: 18px;
     }
 
     .upcoming {
@@ -240,12 +329,32 @@ span {
         gap: 70px;
     }
 
+    .upcoming-left {
+        width: 100%;
+    }
+
+    .upcoming-left h5 {
+        font-size: 14px;
+    }
+
+    .upcoming-left h2 {
+        font-size: 36px;
+    }
+
+    .upcoming-left p {
+        font-size: 14px;
+    }
+
+    .upcoming-left button {
+        font-size: 14px;
+    }
+
     .community-text {
         width: 100%;
     }
 
     .community-text h1 {
-        font-size: 42px;
+        font-size: 30px;
     }
 
     .community-text p {
@@ -253,6 +362,7 @@ span {
     }
 
     .community-text button {
-        font-size: 18px;
+        font-size: 14px;
+        text-transform: capitalize;
     }
 }

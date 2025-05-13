@@ -12,7 +12,7 @@ function Nav() {
   return (
     <div className="navbar">
       <div className="logo">
-        <Link to="/"><img src="BA.jpg" alt="" /></Link>
+        <Link to="/"><img src="BA logo PNG.png" alt="" /></Link>
       </div>
       {/* Icône du menu hamburger */}
       <div className={`menu-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -22,11 +22,10 @@ function Nav() {
       {/* Liens de navigation */}
       <div className={`nav-links ${isOpen ? 'active' : ''}`}>
         <ul>
-          <li><Link to="/">Nos Formations</Link></li>
-          <li><Link to="/">Bootcamp</Link></li>
+          <li><Link to="/">Masterclasses</Link></li>
+          <li><Link to="/">Bootcamps</Link></li>
           <li><Link to="/">A venir</Link></li>
-          <li><Link to="/">BA Community</Link></li>
-          <li><Link to="/">Marketplace</Link></li>
+          <li><Link to="/">Communauté</Link></li>
         </ul>
       </div>
     </div>

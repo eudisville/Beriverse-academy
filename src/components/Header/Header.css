@@ -1,26 +1,31 @@
 header {
-    height: 88vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/learn.jpg');
+    height: 85vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('/public/learn.jpg');
     background-size: cover;
     background-position: center;
     color: white;
     display: flex;
     align-items: end;
     padding: 40px;
+    margin: 0px 20px;
+    border-radius: 30px;
 }
 
 .header {
-    width: 50%;
+    width: 100%;
+    padding: 10px;
 }
 
 .header h1{
-    font-size: 72px;
+    font-size: 66px;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 .header p {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
+    width: 50%;
 }
 
 .header button {
@@ -40,6 +45,10 @@ header {
     transition: .3s;
 }
 
+button {
+    border-radius: 50px;
+}
+
 @media screen and (max-width: 767px) {
     header {
         background-position: -200px;
@@ -49,10 +58,11 @@ header {
     }
 
     .header h1 {
-        font-size: 48px;
+        font-size: 36px;
     }
 
     .header p {
+        width: 100%;
         font-size: 18px;
     }
 
